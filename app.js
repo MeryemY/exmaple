@@ -7,7 +7,7 @@ fal.config({
   credentials: "54f4efc6-3806-46d2-b40d-039a4b51fcb4:ed1a4e2863f987d29f611c98924087aa",
 });
 
-app.use(express.static('./'))
+app.use(express.static('./')) //statik ve kök dizin dosy
 app.use(express.json())
 app.post('/api', async (req, res) => {
 const result = await fal.subscribe("fal-ai/fooocus", {
